@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+}
+
+
+.pricingTable {
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+    padding: 50px 0 25px;
+    margin-top: 30px;
+    position: relative;
+    width: 30%;
+    }
+    .pricingTable .pricing-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+    transition: all 0.5s ease 0s;
+    }
+    .pricingTable:hover .pricing-icon{
+    border: 1px solid #368dff;
+    background: #368dff;
+    }
+    .pricingTable .pricing-icon i{
+    width: 100%;
+    height: 100%;
+    line-height: 75px;
+    border-radius: 50%;
+    background: #368dff;
+    font-size: 30px;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+    }
+    .pricingTable:hover .pricing-icon i{
+    color: #368dff;
+    background: #fff;
+    }
+    .pricingTable .price-Value{
+    display: inline-block;
+    font-size: 60px;
+    color: #494949;
+    position: relative;
+    }
+    .pricingTable .currency{
+    font-size: 25px;
+    position: absolute;
+    top: 18px;
+    left: -18px;
+    }
+    .pricingTable .month{
+    display: block;
+    font-size: 17px;
+    text-transform: capitalize;
+    }
+    .pricingTable .pricingHeader{
+    position: relative;
+    z-index: 1;
+    }
+    .pricingTable .pricingHeader:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    }
+    .pricingTable .title{
+    width: 50%;
+    background: #368dff;
+    margin: 10px auto;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    }
+    .pricingTable .pricing-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    margin-bottom: 25px;
+    }
+    .pricingTable .pricingTable-signup{
+        text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #368dff;
+    border: 1px solid #368dff;
+    padding: 5px 20px;
+    transition: all 0.5s ease 0s;
+    }
+    .pricingTable .pricingTable-signup:hover{
+    background: #fff;
+    color: #368dff;
+    }
+   
+/* responsive design */
+
+  
+    @media  (max-width:767px){
+        body {
+            height: 2000px;
+        }
+        .container {
+            flex-direction: column;
+
+        }
+        .pricingTable { 
+        width: 80%; 
+        margin: 70px;
+    }    
+    }
